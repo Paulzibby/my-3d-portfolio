@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerry | Creative Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        canvas { position: fixed; top: 0; left: 0; z-index: -1; }
+        section { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+    </style>
+</head>
+<body class="bg-gray-900">
+    <canvas id="bg"></canvas>
+
+    <main class="absolute top-0 left-0 w-full">
+        <!-- Home Section -->
+        <section id="home">
+            <h1 class="text-6xl font-bold">Jerry Skitsy</h1>
+            <p class="text-xl mt-4 italic">Roblox Developer • Web Dev • UI/UX • Social Media</p>
+        </section>
+
+        <!-- About/Skills Section -->
+        <section id="about" class="px-10">
+            <h2 class="text-4xl font-bold mb-8">What I Do</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
+                <div class="p-6 bg-white/10 backdrop-blur-md rounded-xl">
+                    <h3 class="text-2xl font-bold">Roblox Studio Expert</h3>
+                    <p>Lua scripting, rig building, and RemoteEvent optimization.</p>
+                </div>
+                <div class="p-6 bg-white/10 backdrop-blur-md rounded-xl">
+                    <h3 class="text-2xl font-bold">UI/UX Designer</h3>
+                    <p>Creating intuitive, high-fidelity interfaces for web and mobile.</p>
+                </div>
+                <div class="p-6 bg-white/10 backdrop-blur-md rounded-xl">
+                    <h3 class="text-2xl font-bold">Web Developer</h3>
+                    <p>Specializing in clean, responsive, and interactive sites.</p>
+                </div>
+                <div class="p-6 bg-white/10 backdrop-blur-md rounded-xl">
+                    <h3 class="text-2xl font-bold">Social Media Manager</h3>
+                    <p>Strategic content planning and community engagement.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
+            <a href="mailto:your-email@example.com" class="px-8 py-3 bg-blue-600 rounded-full hover:bg-blue-500 transition">Contact Me</a>
+        </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
